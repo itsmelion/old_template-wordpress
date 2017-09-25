@@ -1,0 +1,13 @@
+nav {
+  padding: 1rem;
+  list-style: none;
+  .menu {
+    ul {
+      display: inline-flex;
+      flex-direction: row;
+      li {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
