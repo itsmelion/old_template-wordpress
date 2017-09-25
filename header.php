@@ -89,18 +89,16 @@ a:hover{
 </head>
 <body <?php body_class('layout-column-fill-stretch'); ?> >
 
-<nav class="layout-row-forcenowrap-between main-menu flex" id="nav">
+<nav class="layout-row-forcenowrap-between-center main-menu flex" id="nav" role="navigation">
 
   <li class="flex menu-logo">
     <a title="<?php bloginfo( 'description' ); ?>" href="<?php echo home_url();?>" class="hide-sm show-lg">
-    <img src="<?php echo get_bloginfo('template_url') ?>/build/images/logotipo.svg" alt="<?php bloginfo( 'name' ); ?>"/>
+    <img src="<?php echo get_bloginfo('template_url') ?>/build/images/logo.png" alt="<?php bloginfo( 'name' ); ?>"/>
     </a>
     <a title="<?php bloginfo( 'description' ); ?>" href="<?php echo home_url();?>" class="hide-lg show-sm">
     <img src="<?php echo get_bloginfo('template_url') ?>/build/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>"/>
     </a>
   </li>
   
-  <nav class="nav" role="navigation">
-    <?php html5blank_nav(); ?>
-  </nav>
+  <?php html5blank_nav(); ?>
 </nav>
